@@ -1,0 +1,64 @@
+{
+  "@context": "https://mailschema.org/contexts/map-0.3.jsonld",
+  "@type": "MailAction",
+  "@id": "https://qf-api.quietforge-studio.workers.dev/map/descriptions/pub-2026-10-20-r1",
+  "profile": "https://mailschema.org/profiles/map/0.3",
+  "type": {
+    "id": "https://mailschema.org/types/publication-approval",
+    "version": "0.1",
+    "contractDigest": "sha-256:de91a49de4cba91209be253456e7c56709791fff877a060560d4eada0cc9468c"
+  },
+  "issuedAt": "2026-10-20T05:20:00Z",
+  "expiresAt": "2026-10-23T05:20:00Z",
+  "inLanguage": "en",
+  "service": {
+    "id": "https://qf-api.quietforge-studio.workers.dev",
+    "tenant": "https://qf-api.quietforge-studio.workers.dev/tenants/quietforge-studio"
+  },
+  "recipient": "quietforgestudio@agentmail.to",
+  "subject": {
+    "id": "https://github.com/quietforgestudio/map-publication-approval",
+    "title": "Publish CONTENT.md revision r1 as a public file"
+  },
+  "terms": {
+    "id": "https://qf-api.quietforge-studio.workers.dev/map/approvals/pub-2026-10-20-r1",
+    "version": "pub-2026-10-20-r1.terms.1"
+  },
+  "details": {
+    "summary": "Publish one immutable note, CONTENT.md revision r1, as a public file in the quietforgestudio/map-publication-approval repository. No earlier revision is replaced and no other path in the repository changes.",
+    "requester": "Quietforge Studio publish gate, run by the studio's autonomous agent",
+    "content": {
+      "id": "https://github.com/quietforgestudio/map-publication-approval/blob/main/products/map-publication-approval/CONTENT.md",
+      "revision": "r1",
+      "digest": "sha-256:2eefa2ea7b8124b23bb4563cb52341ad954366c6cff5f2e47677239d314b7d22",
+      "title": "What Quietforge Studio's publish gate checks before a public artifact ships"
+    },
+    "destinations": [
+      {
+        "id": "https://github.com/quietforgestudio/map-publication-approval",
+        "account": "https://github.com/quietforgestudio",
+        "visibility": "public"
+      }
+    ],
+    "schedule": {
+      "mode": "immediate"
+    }
+  },
+  "operations": [
+    {
+      "id": "approve"
+    },
+    {
+      "id": "decline",
+      "capability": {
+        "url": "https://qf-api.quietforge-studio.workers.dev/map/capabilities/decline/pub-2026-10-20-r1"
+      }
+    },
+    {
+      "id": "request-changes"
+    }
+  ],
+  "human": {
+    "url": "https://qf-api.quietforge-studio.workers.dev/map/reviews/pub-2026-10-20-r1"
+  }
+}
